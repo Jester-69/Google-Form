@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create your Google Account form clone using HTML and CSS." />
+  <title>Create Your Google Account</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <section class="form-container">
+      <form action="#" method="post" aria-label="Create your Google Account" autocomplete="off">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="Google Logo" width="74" height="24">
+        <h1>Create your Google Account</h1>
+
+        <div class="input-group">
+          <div>
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="first_name" required placeholder="First name" />
+          </div>
+          <div>
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="last_name" required placeholder="Last name" />
+          </div>
+        </div>
+
+        <div id="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required placeholder="username@gmail.com"/>
+          <p class="small-text">You can use letters, numbers & periods</p>
+          <a class="link">Use my current email address instead</a>
+        </div>
+
+        <div class="input-group">
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter password"/>
+          </div>
+          <div>
+            <label for="confirm">Confirm</label>
+            <input type="password" id="confirm" name="confirm_password" required placeholder="Confirm password"/>
+          </div>
+        </div>
+
+        <div class="text">Use 8 or more characters with a mix of letters, numbers & symbols</div>
+
+        <div class="button-group">
+          <a class="link">Sign in instead</a>
+          <button type="submit">Next</button>
+        </div>
+      </form>
+
+      <aside>
+        <img src="https://ssl.gstatic.com/accounts/signup/glif/account.svg" alt="Google account illustration">
+        <p>One account. All of Google working for you.</p>
+      </aside>
+    </section>
+  </main>
+
+  <script src="form.js"></script>
+</body>
+</html>
